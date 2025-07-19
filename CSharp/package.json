@@ -2,7 +2,7 @@
     "name": "x0.clipper2",
     "displayName": "Clipper2",
     "author": { "name": "Angus Johnson", "url": "https://www.angusj.com/clipper2/" },
-    "version": "1.5.43",
+    "version": "1.5.46",
     "unity": "6000.0",
     "description": "Provides shape clipping functionality.",
     "keywords": [ "geometry", "shapes", "clip" ],

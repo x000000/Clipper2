@@ -17,10 +17,10 @@ namespace Clipper2Lib
   {
     public struct Hsl
     {
-      public byte alpha = 0;
-      public byte hue = 0;
-      public byte sat = 0;
-      public byte lum = 0;
+      public byte alpha;
+      public byte hue;
+      public byte sat;
+      public byte lum;
       public Hsl(byte a, byte h, byte s, byte l)
       { alpha = a; hue = h; sat = s; lum = l; }
     }
@@ -29,16 +29,17 @@ namespace Clipper2Lib
     public struct Color32
     {
       [FieldOffset(0)]
-      public byte b = 0;
+      public byte b;
       [FieldOffset(1)]
-      public byte g = 0;
+      public byte g;
       [FieldOffset(2)]
-      public byte r = 0;
+      public byte r;
       [FieldOffset(3)]
-      public byte a = 0;
+      public byte a;
       [FieldOffset(0)]
       public UInt32 color;
-      public Color32(uint val = 0) { color = val; }
+      public Color32(uint val = 0) 
+      { b = 0; g = 0; r = 0; a = 0; color = val; }
     }
 
     public static Color32 HslToRgb(Hsl hsl)
